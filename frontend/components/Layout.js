@@ -1,17 +1,12 @@
-import Header from "./Header";
-import Footer from "./Footer";
-
-const layoutStyle = {
-    margin: 20,
-    padding: 20
-};
+import Header from './Header';
+import Footer from './Footer';
 
 const Layout = props => (
-    <div style={layoutStyle}>
-        <Header />
-        {props.children}
-        <Footer />
-    </div>
+  <div className="container">
+    <Header />
+    {props.children}
+    <Footer />
+  </div>
 );
 
 export default Layout;

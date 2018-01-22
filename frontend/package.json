@@ -13,8 +13,9 @@
         "docker:stop": "docker stop frontend",
         "docker:start": "docker start frontend && yarn run docker:logs",
         "docker:logs": "docker logs -f frontend",
-        "deploy":
-            "yarn run docker:build && yarn run docker:clean && yarn run docker:run"
+        "deploy": "yarn run docker:build && yarn run docker:clean && yarn run docker:run",
+        "styleguide": "styleguidist server",
+        "styleguide:build": "styleguidist build"
     },
     "keywords": [],
     "author": "",
